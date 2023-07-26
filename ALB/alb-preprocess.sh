@@ -1,7 +1,8 @@
 #!/bin/bash
 
-Y=2021
-for M in {01..12}; do 
+Y=2022
+#for M in {01..09}; do 
+for M in 12; do 
     for D in {01..31}; do 
         if [ -d /BigData/ELB/$Y/$M/$D ]; then 
             if [ ! -f /BigData/ELB/output/$Y-$M-$D-output.csv.gz ]; then
